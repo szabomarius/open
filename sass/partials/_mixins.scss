@@ -12,7 +12,7 @@
 		color:$h-color;
 	}
 	&:active {
-		color:$l-color;
+		color:$h-color;
 	}
 }
 
@@ -27,4 +27,19 @@
 @mixin selection {
 	::-moz-selection { @content; }
 	::selection { @content; }
+}
+// CSS3 transitions mixin
+// ---------------------------------------------------------------
+@mixin trans ( $property , $duration , $ease) {
+	-webkit-transition: $property $duration $ease;
+	-moz-transition: $property $duration $ease;
+	-ms-transition: $property $duration $ease;
+	-o-transition: $property $duration $ease;
+	transition: $property $duration $ease;
+}
+// CSS3 transform scale mixin
+@mixin transform-scale ( $size ) {
+	-ms-transform: scale($size);
+	-webkit-transform: scale($size);
+	transform: scale(1.2);
 }
