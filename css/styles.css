@@ -183,19 +183,30 @@ body {
   font-size: 25px;
   font-weight: 900;
   text-transform: uppercase;
+  line-height: 120%;
 }
 
-/* line 60, ../sass/partials/_typography.scss */
+/* line 61, ../sass/partials/_typography.scss */
 .about_us {
   font-size: 25px;
   font-weight: 300;
+  line-height: 120%;
 }
 
-/* line 64, ../sass/partials/_typography.scss */
-.work_type {
-  width: 237px;
-  display: inline-block;
-  text-align: center;
+/* line 67, ../sass/partials/_typography.scss */
+.work_type h3 {
+  font-size: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+/* line 73, ../sass/partials/_typography.scss */
+.work_type li {
+  font-size: 17px;
+  font-weight: 300;
+  color: #77787b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* line 6, ../sass/partials/_layout.scss */
@@ -302,5 +313,13 @@ h1 .logo {
 /* line 86, ../sass/partials/_layout.scss */
 .about_us {
   width: 930px;
-  margin: 0 auto;
+  margin: 0 auto 58px auto;
+}
+
+/* line 90, ../sass/partials/_layout.scss */
+.work_type {
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-top;
+  margin: 0 20px;
 }

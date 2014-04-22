@@ -85,7 +85,13 @@ h1 {
 }
 .about_us {
 	width:	930px;
-	margin: 0 auto;
+	margin: 0 auto 58px auto;
+}
+.work_type {
+	display: inline-block;
+	text-align: center;
+	vertical-align: text-top;
+	margin: 0 20px;
 }
 
 // FOOTER STYLES

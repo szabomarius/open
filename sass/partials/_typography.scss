@@ -56,15 +56,27 @@ body {
 	font-size: 25px;
 	font-weight: 900;
 	text-transform: uppercase;
+	line-height: 120%;
 }
 .about_us {
 	font-size: 25px;
 	font-weight: 300;
+	line-height: 120%;
 }
 .work_type {
-	width:237px;
-	display: inline-block;
-	text-align: center;
+	h3 {
+		font-size: 21px;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	li {
+		font-size: 17px;
+		font-weight: 300;
+		color: #77787b;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------
