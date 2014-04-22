@@ -199,14 +199,38 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 25px;
 }
-/* line 73, ../sass/partials/_typography.scss */
+/* line 74, ../sass/partials/_typography.scss */
 .work_type li {
   font-size: 17px;
   font-weight: 300;
   color: #77787b;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 25px;
+}
+
+/* line 85, ../sass/partials/_typography.scss */
+.footer_wrapper {
+  text-align: center;
+  color: #fff;
+  font-size: 21px;
+}
+/* line 89, ../sass/partials/_typography.scss */
+.footer_wrapper .mesaj {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+/* line 93, ../sass/partials/_typography.scss */
+.footer_wrapper p {
+  font-weight: 300;
+  vertical-align: text-bottom;
+}
+/* line 96, ../sass/partials/_typography.scss */
+.footer_wrapper p span {
+  padding-left: 25px;
+  background: transparent url('../img/disc_list_style.png?1398162370') no-repeat 10px 11px;
 }
 
 /* line 6, ../sass/partials/_layout.scss */
@@ -303,23 +327,52 @@ h1 .logo {
   display: block;
 }
 
-/* line 81, ../sass/partials/_layout.scss */
+/* line 80, ../sass/partials/_layout.scss */
+.main_content {
+  height: 500px;
+}
+
+/* line 83, ../sass/partials/_layout.scss */
 .work {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 86, ../sass/partials/_layout.scss */
+/* line 88, ../sass/partials/_layout.scss */
 .about_us {
   width: 930px;
   margin: 0 auto 58px auto;
 }
 
-/* line 90, ../sass/partials/_layout.scss */
+/* line 92, ../sass/partials/_layout.scss */
 .work_type {
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
   margin: 0 20px;
+}
+/* line 97, ../sass/partials/_layout.scss */
+.work_type img {
+  margin-bottom: 18px;
+}
+
+/* line 101, ../sass/partials/_layout.scss */
+.facebook_link {
+  display: block;
+  width: 58px;
+  height: 50px;
+  margin: 40px auto 0 auto;
+}
+
+/* line 109, ../sass/partials/_layout.scss */
+.main_footer {
+  background-color: #454f53;
+  height: 151px;
+  padding-top: 90px;
+}
+
+/* line 114, ../sass/partials/_layout.scss */
+.footer_wrapper {
+  background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
 }

@@ -69,6 +69,7 @@ body {
 		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
+		line-height: 25px;
 	}
 	li {
 		font-size: 17px;
@@ -76,7 +77,25 @@ body {
 		color: #77787b;
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
+		line-height: 25px;
 	}
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------
+.footer_wrapper {
+	text-align: center;
+	color:	#fff;
+	font-size: 21px;
+	.mesaj {
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+	p {
+		font-weight: 300;
+		vertical-align: text-bottom;
+		span {
+			padding-left: 25px;
+			background: transparent image-url("disc_list_style.png") no-repeat 10px 11px;
+		}
+	}
+}
