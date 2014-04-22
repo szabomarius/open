@@ -83,3 +83,83 @@ button {
   margin: 0px;
   padding: 0px;
 }
+
+/* line 3, ../sass/partials/_typography.scss */
+body {
+  font-family: "Lato";
+}
+
+/* line 9, ../sass/partials/_typography.scss */
+.headings h2 {
+  font-size: 117px;
+}
+/* line 12, ../sass/partials/_typography.scss */
+.headings h3 {
+  font-family: "Lato Light";
+  font-size: 75px;
+  font-weight: normal;
+}
+/* line 16, ../sass/partials/_typography.scss */
+.headings h3 span {
+  font-family: "Lato";
+}
+/* line 20, ../sass/partials/_typography.scss */
+.headings p {
+  font-family: "Lato Light";
+  font-size: 25px;
+  font-weight: bold;
+  color: #515151;
+}
+
+/* line 6, ../sass/partials/_layout.scss */
+body {
+  background-color: #fafafa;
+}
+
+/* line 9, ../sass/partials/_layout.scss */
+.main_header {
+  background-color: #fafafa;
+  background: #fafafa url('../img/header_vertical_bg.jpg?1398108037') repeat-x;
+  height: 810px;
+}
+
+/* line 14, ../sass/partials/_layout.scss */
+.main_header_container {
+  background: transparent url('../img/highlight_header_bg.png?1398107930') no-repeat top center;
+  height: 100%;
+}
+
+/* line 18, ../sass/partials/_layout.scss */
+.main_header_container_container {
+  height: 100%;
+  background: transparent url('../img/pantone.png?1398112083') no-repeat 700px 140px;
+}
+
+/* line 22, ../sass/partials/_layout.scss */
+.head_wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 26, ../sass/partials/_layout.scss */
+.logo {
+  width: 193px;
+  height: 193px;
+  display: block;
+  float: left;
+  clear: right;
+}
+
+/* line 33, ../sass/partials/_layout.scss */
+.main_nav {
+  float: right;
+}
+/* line 35, ../sass/partials/_layout.scss */
+.main_nav li {
+  display: inline-block;
+}
+
+/* line 39, ../sass/partials/_layout.scss */
+.headings {
+  clear: both;
+}

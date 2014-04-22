@@ -1,9 +1,29 @@
 // THE TYPOGRAPHY STYLES
 // ---------------------------------------------------------------
-
+body {
+	font-family: $lato-family;
+}
 // HEADER STYLES
 // ---------------------------------------------------------------
-
+.headings {
+	h2 {
+		font-size: 117px;
+	}
+	h3 {
+		font-family: "Lato Light";
+		font-size: 75px;
+		font-weight: normal;
+		span {
+			font-family: $lato-family;
+		}
+	}
+	p {
+		font-family: "Lato Light";
+		font-size: 25px;
+		font-weight: bold;
+		color: #515151;
+	}
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
 

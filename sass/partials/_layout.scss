@@ -3,7 +3,42 @@
 
 // HEADER STYLES
 // ---------------------------------------------------------------
-
+body {
+	background-color: $body-bg-color;
+}
+.main_header {
+	background-color: $body-bg-color;
+	background: $body-bg-color image-url('header_vertical_bg.jpg') repeat-x;
+	height: $header-height;
+}
+.main_header_container {
+	background: transparent image-url('highlight_header_bg.png') no-repeat top center;
+	height: 100%;
+}
+.main_header_container_container {
+	height: 100%;
+	background: transparent image-url('pantone.png') no-repeat 700px 140px;
+}
+.head_wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+.logo {
+	width: 193px;
+	height: 193px;
+	display: block;
+	float: left;
+	clear: right;
+}
+.main_nav {
+	float: right;
+	li {
+		display: inline-block;
+	}
+}
+.headings {
+	clear: both;
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
 
