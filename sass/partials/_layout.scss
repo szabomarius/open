@@ -13,12 +13,12 @@ body {
 	height: $header-height;
 }
 .main_header_container {
-	background: transparent image-url('highlight_header_bg.png') no-repeat top center;
+	// background: transparent image-url('highlight_header_bg.png') no-repeat top center;
 	height: 100%;
 }
 .main_header_container_container {
 	height: 100%;
-	background: transparent image-url('pantone.png') no-repeat 700px 140px;
+	background: transparent image-url('header_background.jpg') no-repeat center center;
 }
 .head_wrapper {
 	width: 1000px;

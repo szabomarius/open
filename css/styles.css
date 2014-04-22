@@ -237,27 +237,26 @@ body {
 
 /* line 6, ../sass/partials/_layout.scss */
 body {
-  background-color: #fafafa;
+  background-color: white;
   vertical-align: text-top;
 }
 
 /* line 10, ../sass/partials/_layout.scss */
 .main_header {
-  background-color: #fafafa;
-  background: #fafafa url('../img/header_vertical_bg.jpg?1398108037') repeat-x;
+  background-color: white;
+  background: white url('../img/header_vertical_bg.jpg?1398108037') repeat-x;
   height: 810px;
 }
 
 /* line 15, ../sass/partials/_layout.scss */
 .main_header_container {
-  background: transparent url('../img/highlight_header_bg.png?1398107930') no-repeat top center;
   height: 100%;
 }
 
 /* line 19, ../sass/partials/_layout.scss */
 .main_header_container_container {
   height: 100%;
-  background: transparent url('../img/pantone.png?1398155405') no-repeat 700px 140px;
+  background: transparent url('../img/header_background.jpg?1398163225') no-repeat center center;
 }
 
 /* line 23, ../sass/partials/_layout.scss */
