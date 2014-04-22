@@ -1,2 +1,8 @@
 // GENERAL BASIC STYLES
 // ---------------------------------------------------------------
+body {
+	@include selection {
+		color: #fff;
+		background: $link-highlight-color;
+	}
+}

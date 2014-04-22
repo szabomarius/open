@@ -18,6 +18,12 @@
 
 // Text selection mixin
 // ---------------------------------------------------------------
+/* usage
+	@include selection {
+		color: white;
+		background: black;
+	}
+} */
 @mixin selection {
 	::-moz-selection { @content; }
 	::selection { @content; }
