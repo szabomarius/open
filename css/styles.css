@@ -84,82 +84,161 @@ button {
   padding: 0px;
 }
 
+/* line 54, ../sass/partials/_reset.scss */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* line 3, ../sass/partials/_typography.scss */
 body {
   font-family: "Lato";
 }
 
 /* line 9, ../sass/partials/_typography.scss */
+.main_nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 17px;
+  letter-spacing: 0.075em;
+}
+/* line 4, ../sass/partials/_mixins.scss */
+.main_nav a:link {
+  color: black;
+}
+/* line 7, ../sass/partials/_mixins.scss */
+.main_nav a:visited {
+  color: black;
+}
+/* line 10, ../sass/partials/_mixins.scss */
+.main_nav a:hover {
+  color: black;
+  color: #00e4ee;
+}
+/* line 14, ../sass/partials/_mixins.scss */
+.main_nav a:active {
+  color: black;
+}
+/* line 17, ../sass/partials/_typography.scss */
+.main_nav a.active {
+  color: #00e4ee;
+}
+
+/* line 23, ../sass/partials/_typography.scss */
 .headings h2 {
   font-size: 117px;
+  text-transform: uppercase;
 }
-/* line 12, ../sass/partials/_typography.scss */
+/* line 27, ../sass/partials/_typography.scss */
 .headings h3 {
-  font-family: "Lato Light";
-  font-size: 75px;
-  font-weight: normal;
-}
-/* line 16, ../sass/partials/_typography.scss */
-.headings h3 span {
   font-family: "Lato";
+  font-size: 75px;
+  font-weight: 300;
 }
-/* line 20, ../sass/partials/_typography.scss */
+/* line 31, ../sass/partials/_typography.scss */
+.headings h3 span {
+  font-weight: 500;
+}
+/* line 35, ../sass/partials/_typography.scss */
 .headings p {
-  font-family: "Lato Light";
+  font-family: "Lato";
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 300;
   color: #515151;
+}
+
+/* line 43, ../sass/partials/_typography.scss */
+.nav_btns li {
+  font-family: "Arial";
+  font-size: 10px;
+  color: #434342;
+  text-align: center;
+}
+/* line 49, ../sass/partials/_typography.scss */
+.nav_btns li.active {
+  color: #fff;
 }
 
 /* line 6, ../sass/partials/_layout.scss */
 body {
   background-color: #fafafa;
+  vertical-align: text-top;
 }
 
-/* line 9, ../sass/partials/_layout.scss */
+/* line 10, ../sass/partials/_layout.scss */
 .main_header {
   background-color: #fafafa;
   background: #fafafa url('../img/header_vertical_bg.jpg?1398108037') repeat-x;
   height: 810px;
 }
 
-/* line 14, ../sass/partials/_layout.scss */
+/* line 15, ../sass/partials/_layout.scss */
 .main_header_container {
   background: transparent url('../img/highlight_header_bg.png?1398107930') no-repeat top center;
   height: 100%;
 }
 
-/* line 18, ../sass/partials/_layout.scss */
+/* line 19, ../sass/partials/_layout.scss */
 .main_header_container_container {
   height: 100%;
   background: transparent url('../img/pantone.png?1398112083') no-repeat 700px 140px;
 }
 
-/* line 22, ../sass/partials/_layout.scss */
+/* line 23, ../sass/partials/_layout.scss */
 .head_wrapper {
   width: 1000px;
+  padding-top: 55px;
   margin: 0 auto;
 }
 
-/* line 26, ../sass/partials/_layout.scss */
-.logo {
+/* line 28, ../sass/partials/_layout.scss */
+h1 {
+  width: 194px;
+  float: left;
+  margin-bottom: 64px;
+}
+/* line 32, ../sass/partials/_layout.scss */
+h1 .logo {
   width: 193px;
   height: 193px;
   display: block;
-  float: left;
-  clear: right;
-}
-
-/* line 33, ../sass/partials/_layout.scss */
-.main_nav {
-  float: right;
-}
-/* line 35, ../sass/partials/_layout.scss */
-.main_nav li {
-  display: inline-block;
 }
 
 /* line 39, ../sass/partials/_layout.scss */
+.headings h3 {
+  padding-bottom: 13px;
+}
+
+/* line 43, ../sass/partials/_layout.scss */
+.main_nav {
+  float: right;
+  padding-top: 85px;
+}
+/* line 46, ../sass/partials/_layout.scss */
+.main_nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+/* line 51, ../sass/partials/_layout.scss */
 .headings {
   clear: both;
+  margin-bottom: 100px;
+}
+
+/* line 56, ../sass/partials/_layout.scss */
+.nav_btns li {
+  display: inline-block;
+  width: 17px;
+  height: 13px;
+  margin-right: 18px;
+  padding-top: 4px;
+  background: transparent url('../img/two.png?1398154060') no-repeat center center;
+  cursor: pointer;
+}
+/* line 65, ../sass/partials/_layout.scss */
+.nav_btns li.active {
+  background: transparent url('../img/one.png?1398154023') no-repeat center center;
 }

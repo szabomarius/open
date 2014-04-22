@@ -5,6 +5,7 @@
 // ---------------------------------------------------------------
 body {
 	background-color: $body-bg-color;
+	vertical-align:text-top;
 }
 .main_header {
 	background-color: $body-bg-color;
@@ -21,23 +22,49 @@ body {
 }
 .head_wrapper {
 	width: 1000px;
+	padding-top: 55px;
 	margin: 0 auto;
 }
-.logo {
-	width: 193px;
-	height: 193px;
-	display: block;
+h1 {
+	width: 194px;
 	float: left;
-	clear: right;
+	margin-bottom: 64px;
+	.logo {
+		width: 193px;
+		height: 193px;
+		display: block;
+	}
+}
+.headings {
+	h3 {
+		padding-bottom: 13px;
+	}
 }
 .main_nav {
 	float: right;
+	padding-top: 85px;
 	li {
 		display: inline-block;
+		margin-left: 40px;
 	}
 }
 .headings {
 	clear: both;
+	margin-bottom: 100px;
+}
+.nav_btns {
+	li {
+		display: inline-block;
+		width: 17px;
+		height: 13px;
+		margin-right: 18px;
+		padding-top:4px;
+		background: transparent image-url("two.png") no-repeat center center;
+		cursor: pointer;
+	}
+	li.active {
+		background: transparent image-url("one.png") no-repeat center center;
+	}
 }
 // CONTENT STYLES
 // ---------------------------------------------------------------

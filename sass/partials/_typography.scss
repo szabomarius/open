@@ -5,23 +5,49 @@ body {
 }
 // HEADER STYLES
 // ---------------------------------------------------------------
+.main_nav {
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 900;
+		font-size: 17px;
+		letter-spacing: 0.075em;
+		@include anchor-lvha(#000 , $link-highlight-color);
+	}
+	a.active {
+		color: $link-highlight-color;
+	}
+
+}
 .headings {
 	h2 {
 		font-size: 117px;
+		text-transform: uppercase;
 	}
 	h3 {
-		font-family: "Lato Light";
+		font-family: "Lato";
 		font-size: 75px;
-		font-weight: normal;
+		font-weight: 300;
 		span {
-			font-family: $lato-family;
+			font-weight: 500;
 		}
 	}
 	p {
-		font-family: "Lato Light";
+		font-family: "Lato";
 		font-size: 25px;
-		font-weight: bold;
+		font-weight: 300;
 		color: #515151;
+	}
+}
+.nav_btns {
+	li {
+		font-family: "Arial";
+		font-size: 10px;
+		color: #434342;
+		text-align: center;
+	}
+	li.active {
+		color: #fff;
 	}
 }
 // CONTENT STYLES
