@@ -66,6 +66,15 @@ h1 {
 		background: transparent image-url("one.png") no-repeat center center;
 	}
 }
+.down_button {
+	display: block;
+	width: 119px;
+	height: 119px;
+	margin: -30px auto 0 auto;
+	img {
+		display: block;
+	}
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
 

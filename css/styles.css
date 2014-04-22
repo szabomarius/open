@@ -183,7 +183,7 @@ body {
 /* line 19, ../sass/partials/_layout.scss */
 .main_header_container_container {
   height: 100%;
-  background: transparent url('../img/pantone.png?1398112083') no-repeat 700px 140px;
+  background: transparent url('../img/pantone.png?1398155405') no-repeat 700px 140px;
 }
 
 /* line 23, ../sass/partials/_layout.scss */
@@ -241,4 +241,16 @@ h1 .logo {
 /* line 65, ../sass/partials/_layout.scss */
 .nav_btns li.active {
   background: transparent url('../img/one.png?1398154023') no-repeat center center;
+}
+
+/* line 69, ../sass/partials/_layout.scss */
+.down_button {
+  display: block;
+  width: 119px;
+  height: 119px;
+  margin: -30px auto 0 auto;
+}
+/* line 74, ../sass/partials/_layout.scss */
+.down_button img {
+  display: block;
 }
