@@ -108,9 +108,13 @@ h1 {
 // ---------------------------------------------------------------
 .main_footer {
 	background-color: $footer-bg-color;
-	height: 241px - 90px;
-	padding-top: 90px;
+	height: 241px;
+
 }
 .footer_wrapper {
 	background: transparent image-url('buline_footer_pat.png') repeat-x;
+	padding-top: 90px;
+	.mesaj {
+		padding-bottom: 20px;
+	}
 }

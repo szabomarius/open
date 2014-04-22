@@ -216,19 +216,21 @@ body {
   text-align: center;
   color: #fff;
   font-size: 21px;
+  letter-spacing: 0.05em;
 }
-/* line 89, ../sass/partials/_typography.scss */
+/* line 90, ../sass/partials/_typography.scss */
 .footer_wrapper .mesaj {
   text-transform: uppercase;
   font-weight: 900;
 }
-/* line 93, ../sass/partials/_typography.scss */
+/* line 94, ../sass/partials/_typography.scss */
 .footer_wrapper p {
   font-weight: 300;
   vertical-align: text-bottom;
 }
-/* line 96, ../sass/partials/_typography.scss */
+/* line 97, ../sass/partials/_typography.scss */
 .footer_wrapper p span {
+  line-height: 65px;
   padding-left: 25px;
   background: transparent url('../img/disc_list_style.png?1398162370') no-repeat 10px 11px;
 }
@@ -368,11 +370,15 @@ h1 .logo {
 /* line 109, ../sass/partials/_layout.scss */
 .main_footer {
   background-color: #454f53;
-  height: 151px;
-  padding-top: 90px;
+  height: 241px;
 }
 
 /* line 114, ../sass/partials/_layout.scss */
 .footer_wrapper {
   background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
+  padding-top: 90px;
+}
+/* line 117, ../sass/partials/_layout.scss */
+.footer_wrapper .mesaj {
+  padding-bottom: 20px;
 }
