@@ -16,4 +16,10 @@ nav_circles.click(function() {
 	$(this).addClass("active");
 })
 
+// SLIDER FUNCTIONS
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$('.slick_slider').slick({
+	speed: 400
+})
+
 }); //end of document.ready()
