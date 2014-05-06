@@ -21,6 +21,11 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <header class="main_header">
 	<div class="main_header_container">
+		<div class="slick_slider open_slider">
+			<div><img src="img/slider/slide_1.png" alt="slide 1"  width="1200" /></div>
+			<div><img src="img/slider/slide_2.png" alt="slide 2"  width="1000"/></div>
+			<div><img src="img/slider/slide_3.png" alt="slide 3" /></div>
+		</div> <!-- end of .slider -->
 		<div class="head_wrapper">
 			<h1 class=""><img class="logo" src="img/logo.png" alt="Open Design and Print" /></h1>
 			<nav class="main_nav">
@@ -37,11 +42,6 @@
 				<p>Rapid si eficient, ideal in cazul<br /> tirajelor mici si mijlocii</p>
 			</section>
 		</div> <!-- end of .head_wrapper -->
-		<div class="slick_slider open_slider">
-			<div><img src="img/slider/slide_1.png" alt="slide 1"  width="1200" /></div>
-			<div><img src="img/slider/slide_2.png" alt="slide 2"  width="1000"/></div>
-			<div><img src="img/slider/slide_3.png" alt="slide 3" /></div>
-		</div> <!-- end of .slider -->
 		<a class="down_button" href="#"><img src="img/button_down.png" alt="down button"/></a>
 	</div>
 </header> <!-- end of .main_header -->
@@ -111,7 +111,10 @@
 <script>window.jQuery || document.write('<script src="http://code.jquery.com/jquery-1.11.0.min.js">\x3C/script>')</script>
 <script>window.jQuery || document.write('<script src="js/jQuery.js">\x3C/script>')</script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<!-- Slider Plugin -->
 <script src="components/slick/slick.js"></script>
+<!-- Enables Pointer Events In old browsers -->
+<script src="js/pointer_events_polyfill.js"></script>
 <!-- Website Javascript -->
 <script src="js/custom.js"></script>
 </body>

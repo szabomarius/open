@@ -22,4 +22,8 @@ $('.slick_slider').slick({
 	speed: 400
 })
 
+// ENABLE POINTER EVENTS
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PointerEventsPolyfill.initialize({});
+
 }); //end of document.ready()
