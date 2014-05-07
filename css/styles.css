@@ -277,47 +277,59 @@ body {
 /* line 39, ../sass/partials/_layout.scss */
 .open_slider section img {
   display: block;
-  margin-left: 25%;
+  margin-left: 30%;
+}
+/* line 45, ../sass/partials/_layout.scss */
+.open_slider .number1 img {
+  margin-top: 50px;
+}
+/* line 48, ../sass/partials/_layout.scss */
+.open_slider .number2 img {
+  margin-top: 50px;
+}
+/* line 51, ../sass/partials/_layout.scss */
+.open_slider .number3 img {
+  margin-top: 130px;
 }
 
-/* line 46, ../sass/partials/_layout.scss */
+/* line 55, ../sass/partials/_layout.scss */
 h1 {
   width: 194px;
   float: left;
   margin-bottom: 64px;
   pointer-events: auto;
 }
-/* line 51, ../sass/partials/_layout.scss */
+/* line 60, ../sass/partials/_layout.scss */
 h1 .logo {
   width: 193px;
   height: 193px;
   display: block;
 }
 
-/* line 58, ../sass/partials/_layout.scss */
+/* line 67, ../sass/partials/_layout.scss */
 .headings h3 {
   padding-bottom: 13px;
 }
 
-/* line 62, ../sass/partials/_layout.scss */
+/* line 71, ../sass/partials/_layout.scss */
 .main_nav {
   float: right;
   padding-top: 85px;
   pointer-events: auto;
 }
-/* line 66, ../sass/partials/_layout.scss */
+/* line 75, ../sass/partials/_layout.scss */
 .main_nav li {
   display: inline-block;
   margin-left: 40px;
 }
 
-/* line 71, ../sass/partials/_layout.scss */
+/* line 80, ../sass/partials/_layout.scss */
 .headings {
   clear: both;
   margin-bottom: 100px;
 }
 
-/* line 76, ../sass/partials/_layout.scss */
+/* line 85, ../sass/partials/_layout.scss */
 .nav_btns li {
   display: inline-block;
   width: 17px;
@@ -327,12 +339,12 @@ h1 .logo {
   background: transparent url('../img/two.png?1398154060') no-repeat center center;
   cursor: pointer;
 }
-/* line 85, ../sass/partials/_layout.scss */
+/* line 94, ../sass/partials/_layout.scss */
 .nav_btns li.active {
   background: transparent url('../img/one.png?1398154023') no-repeat center center;
 }
 
-/* line 89, ../sass/partials/_layout.scss */
+/* line 98, ../sass/partials/_layout.scss */
 .down_button {
   display: block;
   width: 119px;
@@ -344,50 +356,50 @@ h1 .logo {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 95, ../sass/partials/_layout.scss */
+/* line 104, ../sass/partials/_layout.scss */
 .down_button:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 98, ../sass/partials/_layout.scss */
+/* line 107, ../sass/partials/_layout.scss */
 .down_button img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 109, ../sass/partials/_layout.scss */
+/* line 118, ../sass/partials/_layout.scss */
 .main_content {
   height: 500px;
 }
 
-/* line 112, ../sass/partials/_layout.scss */
+/* line 121, ../sass/partials/_layout.scss */
 .work {
   width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 117, ../sass/partials/_layout.scss */
+/* line 126, ../sass/partials/_layout.scss */
 .about_us {
   width: 930px;
   margin: 0 auto 58px auto;
 }
 
-/* line 121, ../sass/partials/_layout.scss */
+/* line 130, ../sass/partials/_layout.scss */
 .work_type {
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
   margin: 0 20px;
 }
-/* line 126, ../sass/partials/_layout.scss */
+/* line 135, ../sass/partials/_layout.scss */
 .work_type img {
   margin-bottom: 18px;
 }
 
-/* line 130, ../sass/partials/_layout.scss */
+/* line 139, ../sass/partials/_layout.scss */
 .facebook_link {
   display: block;
   width: 54px;
@@ -399,25 +411,25 @@ h1 .logo {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 136, ../sass/partials/_layout.scss */
+/* line 145, ../sass/partials/_layout.scss */
 .facebook_link:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-/* line 142, ../sass/partials/_layout.scss */
+/* line 151, ../sass/partials/_layout.scss */
 .main_footer {
   background-color: #454f53;
   height: 241px;
 }
 
-/* line 147, ../sass/partials/_layout.scss */
+/* line 156, ../sass/partials/_layout.scss */
 .footer_wrapper {
   background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
   padding-top: 90px;
 }
-/* line 150, ../sass/partials/_layout.scss */
+/* line 159, ../sass/partials/_layout.scss */
 .footer_wrapper .mesaj {
   padding-bottom: 20px;
 }
