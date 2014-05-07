@@ -277,8 +277,7 @@ body {
 /* line 39, ../sass/partials/_layout.scss */
 .open_slider section img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 25%;
 }
 
 /* line 46, ../sass/partials/_layout.scss */
