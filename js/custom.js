@@ -19,7 +19,10 @@ nav_circles.click(function() {
 // SLIDER FUNCTIONS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $('.slick_slider').slick({
-	speed: 400
+	speed: 400,
+	arrows: false,
+	slide: 'section',
+	touchThreshold: 10
 })
 
 // ENABLE POINTER EVENTS

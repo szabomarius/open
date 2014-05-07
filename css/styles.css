@@ -271,15 +271,14 @@ body {
 
 /* line 34, ../sass/partials/_layout.scss */
 .open_slider {
-  width: 2000px;
-  min-width: 100%;
+  width: 200%;
   height: 100%;
-  margin: 0 auto;
 }
-/* line 40, ../sass/partials/_layout.scss */
-.open_slider div img {
+/* line 39, ../sass/partials/_layout.scss */
+.open_slider section img {
   display: block;
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 46, ../sass/partials/_layout.scss */

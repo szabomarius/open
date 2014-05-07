@@ -32,14 +32,14 @@ body {
 // SLICK SLIDER 
 
 .open_slider {
-	width: 2000px;
-	min-width: 100%;
+	width: 200%;
 	height: 100%;
-	margin: 0 auto;
-	div {
+	section {
+
 		img {
 			display: block;
-			float: right;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
