@@ -86,10 +86,9 @@ h1 {
 .headings_container {
 	position: absolute;
 	top: 0;
-	display:none;
-}
-.current_heading {
-	display: block;
+	// h2 {display:none}
+	// h3 {display:none}
+	// p {display:none}
 }
 /* NEW NAV BUTTONS */
 .slick-dots {

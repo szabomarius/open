@@ -18,7 +18,10 @@ nav_circles.click(function() {
 
 // SLIDER FUNCTIONS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// text functions
+// hides all but the first elements
+$('.headings_container h2 , .headings_container h3 , .headings_container p').hide();
+$('.headings_container h2').eq(0).show();
+//variables
 var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');
 // animates the text to fade in
@@ -27,16 +30,18 @@ function textFadeIn() {
 	current.find("h2").show();
 	current.find("h3").show();
 	current.find("p").show();
+	console.log("textFadeIn worked");
 }
 // animates the text to fade out
 function textFadeOut() {
 	var current = $('current_heading');
-	current.find("h2").animate({
-		opacity: 0.25,
-		left: "-=50"
-	}, 1000);
-	current.find("h3").hide();
-	current.find("p").hide();
+	var currentH2 = current.find("h2");
+	var currentH3 = current.find("h3");
+	var currentP = current.find("p");
+
+	currentH2.fadeOut({queue: false, duration: "slow"}).animate({left: "-10px"}, "slow");
+
+	console.log("textFadeOut worked");
 }
 // applies the class current_heading to current headings in slide
 function applyCurrent() {
@@ -54,6 +59,7 @@ openSlider.slick({
 	onAfterChange: function(){
 		setTimeout(function(){
 			applyCurrent();
+			textFadeIn();
 		}, 1); //end of setTimeout()
 	}, // end onAfterChange
 	onBeforeChange: function(){
