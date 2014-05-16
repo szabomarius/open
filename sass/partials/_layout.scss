@@ -103,7 +103,7 @@ h1 {
     bottom: auto;
     list-style: none;
     display: block;
-    text-align: center;
+    text-align: left;
     padding: 0px;
     width: 200px;
 	height: 17px;
@@ -133,27 +133,14 @@ h1 {
             }
 
             &:before {
-                position: absolute;
-                top: 0;
-                left: 0;
-                content:'\8226';
-                width: 20px;
-                height: 20px;
-                font-family:"slick";
-                font-size: 6px;
-                line-height: 20px;
-                text-align: center;
-                color: black;
-                opacity: 0.25;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
                 display: none;
             }
 
         }
 
         &.slick-active button{
-            color: red;
+            color: #fff;
+            background: transparent image-url("one.png") no-repeat center center;
         }
     }
 }
