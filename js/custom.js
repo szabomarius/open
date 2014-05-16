@@ -19,22 +19,33 @@ nav_circles.click(function() {
 // SLIDER FUNCTIONS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // text functions
-var textHeading = $('.headings h2');
-var textSubheading = $('.headings h3');
-var textQuote = $('.headings p');
-
-function textOut() {
-	textHeading.html("Titlu 2");
-	textSubheading.html("Subtitlu 2");
-	textQuote.html("Paragraph lung si eficient in prezentare");
-	console.log("textout worked");
+var openSlider = $('.slick_slider');
+var openHeadings = $('.headings_container');
+// animates the text to fade in
+function textFadeIn() {
+	var current = $('current_heading');
+	current.find("h2").show();
+	current.find("h3").show();
+	current.find("p").show();
 }
+// animates the text to fade out
 function textFadeOut() {
-	textHeading.hide();
-	textSubheading.hide();
-	textQuote.hide();
+	var current = $('current_heading');
+	current.find("h2").animate({
+		opacity: 0.25,
+		left: "-=50"
+	}, 1000);
+	current.find("h3").hide();
+	current.find("p").hide();
 }
-$('.slick_slider').slick({
+// applies the class current_heading to current headings in slide
+function applyCurrent() {
+	var current = openSlider.get(0).slick.currentSlide;
+	openHeadings.removeClass("current_heading");
+	openHeadings.eq(current).addClass("current_heading");
+}
+
+openSlider.slick({
 	speed: 800,
 	arrows: false,
 	slide: 'section',
@@ -42,10 +53,11 @@ $('.slick_slider').slick({
 	touchThreshold: 10,
 	onAfterChange: function(){
 		setTimeout(function(){
-
+			applyCurrent();
 		}, 1); //end of setTimeout()
 	}, // end onAfterChange
 	onBeforeChange: function(){
+		textFadeOut();
 	}
 })
 // change the position of the dots
