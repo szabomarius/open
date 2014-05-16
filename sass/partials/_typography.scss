@@ -39,6 +39,19 @@ body {
 		color: #515151;
 	}
 }
+.slick-dots {
+	li {
+		button {
+		font-family: "Arial";
+		font-size: 10px;
+		color: #434342;
+		text-align: center;
+		vertical-align: text-top;
+		line-height: 0;
+		}	
+	}
+
+}
 .nav_btns {
 	li {
 		font-family: "Arial";

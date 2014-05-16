@@ -81,6 +81,7 @@ h1 {
 	clear: both;
 	margin-bottom: 100px;
 }
+/* OLD NAV BUTTONS DOTS
 .nav_btns {
 	li {
 		display: inline-block;
@@ -94,6 +95,67 @@ h1 {
 	li.active {
 		background: transparent image-url("one.png") no-repeat center center;
 	}
+}
+*/
+/* NEW NAV BUTTONS */
+.slick-dots {
+    position: static;
+    bottom: auto;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    width: 200px;
+	height: 17px;
+    pointer-events: auto;
+    li {
+    	pointer-events: auto;
+        position: relative;
+        display: inline-block;
+        height: 17px;
+        width: 17px;
+        margin: 0px 18px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        cursor: pointer;
+        background: transparent image-url("two.png") no-repeat center center;
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 17px;
+            width: 17px;
+            outline: none;
+            padding: 5px;
+            cursor: pointer;
+            outline: none;
+            &:focus {
+                outline: none;
+            }
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content:'\8226';
+                width: 20px;
+                height: 20px;
+                font-family:"slick";
+                font-size: 6px;
+                line-height: 20px;
+                text-align: center;
+                color: black;
+                opacity: 0.25;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                display: none;
+            }
+
+        }
+
+        &.slick-active button{
+            color: red;
+        }
+    }
 }
 .down_button {
 	display: block;

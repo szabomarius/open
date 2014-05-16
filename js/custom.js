@@ -1,7 +1,7 @@
 // custom js
 $(document).ready(function() {
 
-// Make buttons active or not
+// MAKE BUTTONS ACTIVE OR NOT LOL
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 var nav_buttons = $('.main_nav a');
@@ -19,11 +19,17 @@ nav_circles.click(function() {
 // SLIDER FUNCTIONS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $('.slick_slider').slick({
-	speed: 600,
+	speed: 800,
 	arrows: false,
 	slide: 'section',
+	dots: true,
 	touchThreshold: 10
 })
+// change the position of the dots
+$('.head_wrapper').append( $('.slick-dots') );
+
+// Current index in the slider
+//$('your-slider').get(0).slick.currentSlide
 
 // ENABLE POINTER EVENTS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
