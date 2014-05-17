@@ -21,6 +21,8 @@ nav_circles.click(function() {
 // hides all but the first elements
 $('.headings_container h2 , .headings_container h3 , .headings_container p').hide();
 $('.headings_container h2').eq(0).show();
+$('.headings_container h3').eq(0).show();
+$('.headings_container p').eq(0).show();	
 //variables
 var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');
@@ -31,6 +33,8 @@ function textFadeIn() {
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
 	currentH2.fadeIn({queue: false, duration: 300}).animate({left: "-30px"}, 600);
+	currentH3.fadeIn({queue: false, duration: 300}).animate({left: "-30px"}, 600);
+	currentP.fadeIn({queue: false, duration: 300}).animate({left: "-30px"}, 600);
 	// current.find("h3").show();
 	// current.find("p").show();
 
@@ -43,6 +47,12 @@ function textFadeOut() {
 	var currentP = current.find("p");
 
 	currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=160px"}, 600).animate({marginLeft: "+=160px"}, 0);
+	setTimeout(function(){
+		currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=160px"}, 600).animate({marginLeft: "+=160px"}, 0);
+	}, 150);
+	setTimeout(function(){
+	currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=160px"}, 600).animate({marginLeft: "+=160px"}, 0);
+	}, 300);
 
 	console.log("textFadeOut worked");
 }
