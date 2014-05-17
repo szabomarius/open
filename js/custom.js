@@ -26,20 +26,23 @@ var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');
 // animates the text to fade in
 function textFadeIn() {
-	var current = $('current_heading');
-	current.find("h2").show();
-	current.find("h3").show();
-	current.find("p").show();
-	console.log("textFadeIn worked");
+	var current = $('.current_heading');
+	var currentH2 = current.find("h2");
+	var currentH3 = current.find("h3");
+	var currentP = current.find("p");
+	currentH2.fadeIn({queue: false, duration: 300}).animate({left: "-30px"}, 600);
+	// current.find("h3").show();
+	// current.find("p").show();
+
 }
 // animates the text to fade out
 function textFadeOut() {
-	var current = $('current_heading');
+	var current = $('.current_heading');
 	var currentH2 = current.find("h2");
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
 
-	currentH2.fadeOut({queue: false, duration: "slow"}).animate({left: "-10px"}, "slow");
+	currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=160px"}, 600).animate({marginLeft: "+=160px"}, 0);
 
 	console.log("textFadeOut worked");
 }
