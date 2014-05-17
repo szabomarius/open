@@ -85,10 +85,22 @@ h1 {
 }
 .headings_container {
 	position: absolute;
+	width: 500px;
+	height: 400px;	
 	top: 0;
-	// h2 {display:none}
-	// h3 {display:none}
-	// p {display:none}
+	// absolute position for better jquery animations
+	h2 {
+		position: absolute;
+		top: 0;
+	}
+	h3 {
+		position: absolute;
+		top: 150px;
+	}
+	p {
+		top: 250px;
+		position: absolute;
+	}
 }
 /* NEW NAV BUTTONS */
 .slick-dots {
