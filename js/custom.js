@@ -18,11 +18,6 @@ nav_circles.click(function() {
 
 // SLIDER FUNCTIONS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// hides all but the first elements
-// $('.headings_container h2 , .headings_container h3 , .headings_container p').hide();
-// $('.headings_container h2').eq(0).show();
-// $('.headings_container h3').eq(0).show();
-// $('.headings_container p').eq(0).show();	
 //variables
 var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');

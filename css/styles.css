@@ -360,13 +360,13 @@ h1 .logo {
   margin-left: 35px;
   display: none;
   position: absolute;
-  top: 150px;
+  top: 110px;
 }
 /* line 104, ../sass/partials/_layout.scss */
 .headings_container p {
   margin-left: 35px;
   display: none;
-  top: 250px;
+  top: 200px;
   position: absolute;
 }
 
