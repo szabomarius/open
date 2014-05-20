@@ -21,17 +21,20 @@ nav_circles.click(function() {
 //variables
 var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');
+var slideinDistance = 100; // set your margins to this one
 // animates the text to fade in
 function textFadeIn() {
 	var current = $('.current_heading');
 	var currentH2 = current.find("h2");
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
-	currentH2.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-=35px"}, 400);
-	currentH3.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-=35px"}, 400);
-	currentP.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-=35px"}, 400);
-	// current.find("h3").show();
-	// current.find("p").show();
+	currentH2.fadeIn({queue: false, duration: 300}).animate({marginTop: "+="+ slideinDistance + "px"}, 500);
+	setTimeout(function(){
+		currentH3.fadeIn({queue: false, duration: 300}).animate({marginLeft: "+="+ slideinDistance + "px"}, 300);
+	}, 150);
+	setTimeout(function(){
+		currentP.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-="+ slideinDistance + "px"}, 300);
+	}, 200);
 
 }
 // animates the text to fade out
@@ -41,12 +44,12 @@ function textFadeOut() {
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
 
-	currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=295px"}, 0);
+	currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=260px", marginTop: "-=" + slideinDistance + "px"}, 0);
 	setTimeout(function(){
-		currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=295px"}, 0);
+		currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 - slideinDistance) + "px"}, 0);
 	}, 150);
 	setTimeout(function(){
-	currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=295px"}, 0);
+	currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 + slideinDistance) + "px"}, 0);
 	}, 300);
 
 	console.log("textFadeOut worked");

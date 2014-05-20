@@ -350,21 +350,21 @@ h1 .logo {
 }
 /* line 92, ../sass/partials/_layout.scss */
 .headings_container h2 {
-  margin-left: 35px;
+  margin-top: -100px;
   display: none;
   position: absolute;
   top: 0;
 }
 /* line 98, ../sass/partials/_layout.scss */
 .headings_container h3 {
-  margin-left: 35px;
+  margin-left: -100px;
   display: none;
   position: absolute;
   top: 110px;
 }
 /* line 104, ../sass/partials/_layout.scss */
 .headings_container p {
-  margin-left: 35px;
+  margin-left: +100px;
   display: none;
   top: 200px;
   position: absolute;
@@ -373,7 +373,7 @@ h1 .logo {
 /* line 112, ../sass/partials/_layout.scss */
 .headings_container:first-child h2 {
   display: block;
-  margin-left: 0;
+  margin-top: 0;
 }
 /* line 113, ../sass/partials/_layout.scss */
 .headings_container:first-child h3 {

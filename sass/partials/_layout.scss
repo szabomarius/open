@@ -90,26 +90,26 @@ h1 {
 	top: 0;
 	// absolute position for better jquery animations
 	h2 {
-		margin-left: 35px;
+		margin-top: -100px;
 		display: none;
 		position: absolute;
 		top: 0;
 	}
 	h3 {
-		margin-left: 35px;
+		margin-left: -100px;
 		display: none;
 		position: absolute;
 		top: 110px;
 	}
 	p {
-		margin-left: 35px;
+		margin-left: +100px;
 		display: none;
 		top: 200px;
 		position: absolute;
 	}
 }
 .headings_container:first-child {
-	h2 {display: block; margin-left: 0;}
+	h2 {display: block; margin-top: 0;}
 	h3 {display: block; margin-left: 0;}
 	p {display: block; margin-left: 0;}
 }
