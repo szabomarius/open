@@ -478,7 +478,7 @@ h1 .logo {
 
 /* line 195, ../sass/partials/_layout.scss */
 .main_content {
-  height: 500px;
+  height: 600px;
 }
 
 /* line 198, ../sass/partials/_layout.scss */
@@ -502,41 +502,77 @@ h1 .logo {
   margin: 0 20px;
 }
 /* line 212, ../sass/partials/_layout.scss */
-.work_type img {
-  margin-bottom: 18px;
+.work_type div {
+  position: relative;
+  width: 197px;
+  height: 197px;
+  margin: 0 auto 40px auto;
+  -webkit-border-radius: 50% 50%;
+  -moz-border-radius: 50% / 50%;
+  border-radius: 50% / 50%;
+}
+/* line 218, ../sass/partials/_layout.scss */
+.work_type div img {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
 }
 
-/* line 216, ../sass/partials/_layout.scss */
+/* line 226, ../sass/partials/_layout.scss */
+.work_creatie .round_graphic {
+  background-color: #8aebf1;
+}
+
+/* line 227, ../sass/partials/_layout.scss */
+.work_productie .round_graphic {
+  background-color: #beed7b;
+}
+
+/* line 228, ../sass/partials/_layout.scss */
+.work_print .round_graphic {
+  background-color: #ffde6d;
+}
+
+/* line 229, ../sass/partials/_layout.scss */
+.work_outdoor .round_graphic {
+  background-color: #ff8989;
+}
+
+/* line 230, ../sass/partials/_layout.scss */
 .facebook_link {
   display: block;
-  width: 54px;
+  width: 50px;
   height: 50px;
-  margin: 40px auto 0 auto;
+  margin: 90px auto 0 auto;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 222, ../sass/partials/_layout.scss */
+/* line 236, ../sass/partials/_layout.scss */
 .facebook_link:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-/* line 228, ../sass/partials/_layout.scss */
+/* line 242, ../sass/partials/_layout.scss */
 .main_footer {
   background-color: #454f53;
   height: 241px;
 }
 
-/* line 233, ../sass/partials/_layout.scss */
+/* line 247, ../sass/partials/_layout.scss */
 .footer_wrapper {
   background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
   padding-top: 90px;
 }
-/* line 236, ../sass/partials/_layout.scss */
+/* line 250, ../sass/partials/_layout.scss */
 .footer_wrapper .mesaj {
   padding-bottom: 20px;
 }

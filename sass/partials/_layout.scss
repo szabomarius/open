@@ -193,7 +193,7 @@ h1 {
 // CONTENT STYLES
 // ---------------------------------------------------------------
 .main_content {
-	height: 500px;
+	height: 600px;
 }
 .work {
 	width: 1280px;
@@ -209,15 +209,29 @@ h1 {
 	text-align: center;
 	vertical-align: text-top;
 	margin: 0 20px;
-	img {
-		margin-bottom: 18px;
+	div {
+		position: relative;
+		width: 197px;
+		height: 197px;
+		margin: 0 auto 40px auto;
+		@include border-radius(50%, 50%);
+		img {
+			display: block;
+			position: absolute;
+			top: 0; right: 0; left: 0; bottom: 0;
+			margin: auto;
+		}	
 	}
 }
+.work_creatie .round_graphic{	background-color: #8aebf1; }
+.work_productie .round_graphic{	background-color: #beed7b; }
+.work_print .round_graphic{	background-color: #ffde6d; }
+.work_outdoor .round_graphic{	background-color: #ff8989; }
 .facebook_link {
 	display: block;
-	width: 54px;
+	width: 50px;
 	height: 50px;
-	margin: 40px auto 0 auto;
+	margin: 90px auto 0 auto;
 	@include trans (all, 0.2s, ease-out);
 	&:hover {
 		@include transform-scale ( 1.2 );
