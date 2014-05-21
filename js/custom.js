@@ -56,7 +56,7 @@ function textFadeOut() {
 }
 // applies the class current_heading to current headings in slide
 function applyCurrent() {
-	var current = openSlider.get(0).slick.currentSlide;
+	var current = openSlider.get(0).slick.currentSlide; //current index in the slider
 	openHeadings.removeClass("current_heading");
 	openHeadings.eq(current).addClass("current_heading");
 }
@@ -80,8 +80,18 @@ openSlider.slick({
 // change the position of the dots
 $('.head_wrapper').append( $('.slick-dots') );
 
-// Current index in the slider
-//$('your-slider').get(0).slick.currentSlide
+
+// SMOOTH SCROLLING TO ANCHOR TAGS BASED ON NAME
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+(function(){
+	var root = $('html, body');
+	$('a').click(function(){
+	    root.animate({
+	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+	    }, 1000);
+    return false;
+	});
+})();
 
 // ENABLE POINTER EVENTS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
