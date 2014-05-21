@@ -88,7 +88,7 @@ $('.head_wrapper').append( $('.slick-dots') );
 	$('a').click(function(){
 	    root.animate({
 	        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-	    }, 1000);
+	    }, 900);
     return false;
 	});
 })();
