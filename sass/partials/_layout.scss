@@ -35,6 +35,10 @@ body {
 .open_slider {
 	width: 200%;
 	height: 100%;
+	@include grab-cursor;
+	.slick-list.dragging {
+		@include grabbing-cursor;
+	}
 	section {
 
 		img {

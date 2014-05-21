@@ -43,3 +43,13 @@
 	-webkit-transform: scale($size);
 	transform: scale(1.2);
 }
+// Grab Cursor
+// ---------------------------------------------------------------
+@mixin grab-cursor {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+@mixin grabbing-cursor {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}
