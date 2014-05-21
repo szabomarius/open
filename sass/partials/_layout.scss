@@ -162,10 +162,17 @@ h1 {
     }
 }
 .down_button {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 4;
 	display: block;
 	width: 119px;
 	height: 119px;
-	margin: -30px auto 0 auto;
+	// margin: -30px auto 0 auto;
 	@include trans (all, 0.2s, ease-out);
 	&:hover {
 		@include transform-scale ( 1.2 );
