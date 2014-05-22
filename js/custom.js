@@ -1,6 +1,13 @@
 // custom js
 $(document).ready(function() {
 
+// MODERNIZRD DETECTS
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// detects if the browser has css transitions
+var detected = Modernizr.csstransitions;
+console.log(detected);
+
+
 // MAKE BUTTONS ACTIVE OR NOT LOL
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

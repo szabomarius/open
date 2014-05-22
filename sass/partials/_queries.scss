@@ -8,27 +8,35 @@
 
 @media all and ( max-width: 1150px ) {
 // ------------------------------------------------------
-	.work_type {
-		margin: 0 1.73913%;
-		.round_graphic {
-			height: 150px;
-			width: 150px;
-		}
-		h3 {
-			font-size: 16px;
-		}
-		li {
-			font-size: 12px;
-		}
+/* header content */
+.head_wrapper {
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+/* main content */
+.work_type {
+	margin: 0 1.73913%;
+	.round_graphic {
+		height: 150px;
+		width: 150px;
 	}
-	.work_creatie , .work_print {
-		width: 17.1304%;
+	h3 {
+		font-size: 16px;
 	}
-	.work_productiie {
-		width: 23.1304%;
+	li {
+		font-size: 12px;
 	}
-	.work_outdoor {
-		width: 21.5652%;
-	}
+}
+.work_creatie , .work_print {
+	width: 17.1304%;
+}
+.work_productiie {
+	width: 23.1304%;
+}
+.work_outdoor {
+	width: 21.5652%;
+}
 // ------------------------------------------------------
 }
+
