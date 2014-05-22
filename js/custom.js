@@ -97,4 +97,20 @@ $('.head_wrapper').append( $('.slick-dots') );
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PointerEventsPolyfill.initialize({});
 
+// Find out the browser window dimensions
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function viewport() {
+    var e = window, a = 'inner';
+    if (!('innerWidth' in window )) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+
+$( window ).resize(function() {
+	var viewportSize = viewport();
+	console.log(viewportSize);
+});
+
 }); //end of document.ready()

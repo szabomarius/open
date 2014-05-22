@@ -334,7 +334,7 @@ body {
   margin: 0px 18px 0px 0px;
   padding: 0px 0px 0px 0px;
   cursor: pointer;
-  background: transparent url('../img/two.png?1398154060') no-repeat center center;
+  background: transparent url('../img/two.png?1400702520') no-repeat center center;
 }
 /* line 82, ../sass/partials/_layout.scss */
 .slick-dots li button {
@@ -483,26 +483,27 @@ h1 .logo {
 
 /* line 198, ../sass/partials/_layout.scss */
 .work {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 203, ../sass/partials/_layout.scss */
+/* line 204, ../sass/partials/_layout.scss */
 .about_us {
   width: 930px;
   margin: 0 auto 58px auto;
 }
 
-/* line 207, ../sass/partials/_layout.scss */
+/* line 208, ../sass/partials/_layout.scss */
 .work_type {
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
   margin: 0 20px;
 }
-/* line 212, ../sass/partials/_layout.scss */
-.work_type div {
+/* line 213, ../sass/partials/_layout.scss */
+.work_type .round_graphic {
   position: relative;
   width: 197px;
   height: 197px;
@@ -511,8 +512,8 @@ h1 .logo {
   -moz-border-radius: 50% / 50%;
   border-radius: 50% / 50%;
 }
-/* line 218, ../sass/partials/_layout.scss */
-.work_type div img {
+/* line 219, ../sass/partials/_layout.scss */
+.work_type .round_graphic img {
   display: block;
   position: absolute;
   top: 0;
@@ -522,27 +523,27 @@ h1 .logo {
   margin: auto;
 }
 
-/* line 226, ../sass/partials/_layout.scss */
+/* line 227, ../sass/partials/_layout.scss */
 .work_creatie .round_graphic {
   background-color: #8aebf1;
 }
 
-/* line 227, ../sass/partials/_layout.scss */
+/* line 228, ../sass/partials/_layout.scss */
 .work_productie .round_graphic {
   background-color: #beed7b;
 }
 
-/* line 228, ../sass/partials/_layout.scss */
+/* line 229, ../sass/partials/_layout.scss */
 .work_print .round_graphic {
   background-color: #ffde6d;
 }
 
-/* line 229, ../sass/partials/_layout.scss */
+/* line 230, ../sass/partials/_layout.scss */
 .work_outdoor .round_graphic {
   background-color: #ff8989;
 }
 
-/* line 230, ../sass/partials/_layout.scss */
+/* line 231, ../sass/partials/_layout.scss */
 .facebook_link {
   display: block;
   width: 50px;
@@ -554,25 +555,60 @@ h1 .logo {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 236, ../sass/partials/_layout.scss */
+/* line 237, ../sass/partials/_layout.scss */
 .facebook_link:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-/* line 242, ../sass/partials/_layout.scss */
+/* line 243, ../sass/partials/_layout.scss */
 .main_footer {
   background-color: #454f53;
   height: 241px;
 }
 
-/* line 247, ../sass/partials/_layout.scss */
+/* line 248, ../sass/partials/_layout.scss */
 .footer_wrapper {
   background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
   padding-top: 90px;
 }
-/* line 250, ../sass/partials/_layout.scss */
+/* line 251, ../sass/partials/_layout.scss */
 .footer_wrapper .mesaj {
   padding-bottom: 20px;
+}
+
+@media all and (max-width: 1150px) {
+  /* line 11, ../sass/partials/_queries.scss */
+  .work_type {
+    margin: 0 1.73913%;
+  }
+  /* line 13, ../sass/partials/_queries.scss */
+  .work_type .round_graphic {
+    height: 150px;
+    width: 150px;
+  }
+  /* line 17, ../sass/partials/_queries.scss */
+  .work_type h3 {
+    font-size: 16px;
+  }
+  /* line 20, ../sass/partials/_queries.scss */
+  .work_type li {
+    font-size: 12px;
+  }
+
+  /* line 24, ../sass/partials/_queries.scss */
+  .work_creatie, .work_print {
+    width: 17.1304%;
+  }
+
+  /* line 27, ../sass/partials/_queries.scss */
+  .work_productiie {
+    width: 23.1304%;
+  }
+
+  /* line 30, ../sass/partials/_queries.scss */
+  .work_outdoor {
+    width: 21.5652%;
+  }
 }
