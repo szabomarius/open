@@ -48,6 +48,7 @@ body {
 			// margin-right: auto;
 		}
 	}
+	// these are the slide images, and they each have a class for easier positioning
 	.number1 img {
 		margin-top: 50px;
 	}
@@ -155,12 +156,43 @@ h1 {
 		top: 110px;
 	}
 	p {
-		margin-left: +100px;
+		margin-left: 100px;
 		display: none;
 		top: 200px;
 		position: absolute;
 	}
 }
+// css3 transition clases for the slider
+.headings_transition_detected {
+	h2, h3, p {
+		@include trans ( all , 0.3s , ease-out );
+		display: block;
+		opacity: 0;
+	}
+}
+.headings_transition_detected:first-child {
+	h2, h3, p {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	opacity: 1 !important;
+	margin-top: 0px !important;
+	margin-left: 0px !important;
+}
+.fadeOut {
+	opacity: 0 !important;
+}
+h2.fadeOut {
+	margin-top: -100px !important;
+}
+h3.fadeOut {
+	margin-left: -100px !important;
+}
+p.fadeOut {
+	margin-left: 100px !important;
+}
+
 .headings_container:first-child {
 	h2 {display: block; margin-top: 0;}
 	h3 {display: block; margin-left: 0;}

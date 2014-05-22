@@ -3,8 +3,11 @@ $(document).ready(function() {
 
 // MODERNIZRD DETECTS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// detects if the browser has css transitions
+// detects if the browser has css transitions and applies a class
 var detected = Modernizr.csstransitions;
+if (detected) {
+	$('.headings_container').addClass("headings_transition_detected");	
+}
 console.log(detected);
 
 
@@ -31,35 +34,55 @@ var openHeadings = $('.headings_container');
 var slideinDistance = 100; // set your margins to this one
 // animates the text to fade in
 function textFadeIn() {
+	//variables
 	var current = $('.current_heading');
 	var currentH2 = current.find("h2");
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
-	currentH2.fadeIn({queue: false, duration: 300}).animate({marginTop: "+="+ slideinDistance + "px"}, 500);
-	setTimeout(function(){
-		currentH3.fadeIn({queue: false, duration: 300}).animate({marginLeft: "+="+ slideinDistance + "px"}, 300);
-	}, 150);
-	setTimeout(function(){
-		currentP.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-="+ slideinDistance + "px"}, 300);
-	}, 200);
+	// if transitions are not detected, animate via jquery
+	if (!detected) {
+		currentH2.fadeIn({queue: false, duration: 300}).animate({marginTop: "+="+ slideinDistance + "px"}, 500);
+		setTimeout(function(){
+			currentH3.fadeIn({queue: false, duration: 300}).animate({marginLeft: "+="+ slideinDistance + "px"}, 300);
+		}, 150);
+		setTimeout(function(){
+			currentP.fadeIn({queue: false, duration: 300}).animate({marginLeft: "-="+ slideinDistance + "px"}, 300);
+		}, 200);
+		console.log("transitions have not been detected, switching to jquery animate");
+	}
+	// if transitions are detected, proceed to add classes to fadein things.
+	else {
+		currentH2.removeClass("fadeOut");
+		currentH3.removeClass("fadeOut");
+		currentP.removeClass("fadeOut");
 
+		currentH2.addClass("fadeIn");
+		currentH3.addClass("fadeIn");
+		currentP.addClass("fadeIn");
+	}
 }
 // animates the text to fade out
 function textFadeOut() {
+	//variables
 	var current = $('.current_heading');
 	var currentH2 = current.find("h2");
 	var currentH3 = current.find("h3");
 	var currentP = current.find("p");
-
-	currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=260px", marginTop: "-=" + slideinDistance + "px"}, 0);
-	setTimeout(function(){
-		currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 - slideinDistance) + "px"}, 0);
-	}, 150);
-	setTimeout(function(){
-	currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 + slideinDistance) + "px"}, 0);
-	}, 300);
-
-	console.log("textFadeOut worked");
+	if (!detected) {
+		currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=260px", marginTop: "-=" + slideinDistance + "px"}, 0);
+		setTimeout(function(){
+			currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 - slideinDistance) + "px"}, 0);
+		}, 150);
+		setTimeout(function(){
+		currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 + slideinDistance) + "px"}, 0);
+		}, 300);
+	}
+	else {
+		console.log("fade out else");
+		currentH2.addClass("fadeOut");
+		currentH3.addClass("fadeOut");
+		currentP.addClass("fadeOut");
+	}
 }
 // applies the class current_heading to current headings in slide
 function applyCurrent() {
@@ -100,7 +123,7 @@ $('.head_wrapper').append( $('.slick-dots') );
 	});
 })();
 
-// ENABLE POINTER EVENTS
+// ENABLE POINTER EVENTS FOR OLDER BROWSERS
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 PointerEventsPolyfill.initialize({});
 
