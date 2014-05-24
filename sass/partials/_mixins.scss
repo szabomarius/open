@@ -37,6 +37,13 @@
 	-o-transition: $property $duration $ease;
 	transition: $property $duration $ease;
 }
+@mixin trans-delay ( $time ) {
+	-webkit-transition-delay: $time; /* Safari & Chrome */
+	-moz-transition-delay: $time; /* Firefox */
+	-ms-transition-delay: $time; /* Internet Explorer */
+	-o-transition-delay: $time; /* Opera */
+	transition-delay: $time; /* W3C */
+}
 // CSS3 transform scale mixin
 @mixin transform-scale ( $size ) {
 	-ms-transform: scale($size);
