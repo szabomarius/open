@@ -552,11 +552,12 @@ p.default {
 
 /* line 249, ../sass/partials/_layout.scss */
 .main_content {
+  position: relative;
   padding: 0 5% 0 5%;
   min-height: 600px;
 }
 
-/* line 253, ../sass/partials/_layout.scss */
+/* line 254, ../sass/partials/_layout.scss */
 .work {
   width: 100%;
   max-width: 1280px;
@@ -564,21 +565,21 @@ p.default {
   text-align: center;
 }
 
-/* line 259, ../sass/partials/_layout.scss */
+/* line 260, ../sass/partials/_layout.scss */
 .about_us {
   width: 100%;
   max-width: 930px;
   margin: 0 auto 58px auto;
 }
 
-/* line 264, ../sass/partials/_layout.scss */
+/* line 265, ../sass/partials/_layout.scss */
 .work_type {
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
   margin: 0 20px;
 }
-/* line 269, ../sass/partials/_layout.scss */
+/* line 270, ../sass/partials/_layout.scss */
 .work_type .round_graphic {
   position: relative;
   width: 197px;
@@ -588,7 +589,7 @@ p.default {
   -moz-border-radius: 50% / 50%;
   border-radius: 50% / 50%;
 }
-/* line 275, ../sass/partials/_layout.scss */
+/* line 276, ../sass/partials/_layout.scss */
 .work_type .round_graphic img {
   display: block;
   position: absolute;
@@ -599,57 +600,61 @@ p.default {
   margin: auto;
 }
 
-/* line 283, ../sass/partials/_layout.scss */
+/* line 284, ../sass/partials/_layout.scss */
 .work_creatie .round_graphic {
   background-color: #8aebf1;
 }
 
-/* line 284, ../sass/partials/_layout.scss */
+/* line 285, ../sass/partials/_layout.scss */
 .work_productie .round_graphic {
   background-color: #beed7b;
 }
 
-/* line 285, ../sass/partials/_layout.scss */
+/* line 286, ../sass/partials/_layout.scss */
 .work_print .round_graphic {
   background-color: #ffde6d;
 }
 
-/* line 286, ../sass/partials/_layout.scss */
+/* line 287, ../sass/partials/_layout.scss */
 .work_outdoor .round_graphic {
   background-color: #ff8989;
 }
 
-/* line 287, ../sass/partials/_layout.scss */
+/* line 288, ../sass/partials/_layout.scss */
 .facebook_link {
   display: block;
   width: 50px;
   height: 50px;
-  margin: 90px auto 0 auto;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -23px;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 293, ../sass/partials/_layout.scss */
+/* line 297, ../sass/partials/_layout.scss */
 .facebook_link:hover {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-/* line 299, ../sass/partials/_layout.scss */
+/* line 303, ../sass/partials/_layout.scss */
 .main_footer {
   background-color: #454f53;
   height: 241px;
 }
 
-/* line 304, ../sass/partials/_layout.scss */
+/* line 308, ../sass/partials/_layout.scss */
 .footer_wrapper {
   background: transparent url('../img/buline_footer_pat.png?1398161771') repeat-x;
   padding-top: 90px;
 }
-/* line 307, ../sass/partials/_layout.scss */
+/* line 311, ../sass/partials/_layout.scss */
 .footer_wrapper .mesaj {
   padding-bottom: 20px;
 }
