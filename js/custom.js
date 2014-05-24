@@ -73,20 +73,24 @@ function textFadeOut() {
 		currentH2.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+=260px", marginTop: "-=" + slideinDistance + "px"}, 0);
 		setTimeout(function(){
 			currentH3.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 - slideinDistance) + "px"}, 0);
-		}, 150);
+		}, 60);
 		setTimeout(function(){
 		currentP.fadeOut({queue: false, duration: 600}).animate({marginLeft: "-=260px"}, 600).animate({marginLeft: "+="+ (260 + slideinDistance) + "px"}, 0);
-		}, 300);
+		}, 200);
 	}
 	else {
 		currentH2.addClass("fadeOut");
-		currentH3.addClass("fadeOut");
-		currentP.addClass("fadeOut");
+		setTimeout(function() {
+			currentH3.addClass("fadeOut");
+		}, 150);
+		setTimeout(function() {
+			currentP.addClass("fadeOut");
+		}, 300);
 		setTimeout(function(){
 			currentH2.addClass("notrans default");
 			currentH3.addClass("notrans default");
 			currentP.addClass("notrans default");
-		}, 410);
+		}, 600);
 	}
 }
 // applies the class current_heading to current headings in slide

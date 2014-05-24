@@ -165,7 +165,7 @@ h1 {
 // css3 transition clases for the slider
 .headings_transition_detected {
 	h2, h3, p {
-		@include trans ( all , 0.5s , ease-out );
+		@include trans ( all , 0.4s , ease-out );
 		display: block;
 		opacity: 0;
 	}
