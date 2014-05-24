@@ -165,7 +165,7 @@ h1 {
 // css3 transition clases for the slider
 .headings_transition_detected {
 	h2, h3, p {
-		@include trans ( all , 0.3s , ease-out );
+		@include trans ( all , 0.5s , ease-out );
 		display: block;
 		opacity: 0;
 	}
@@ -184,14 +184,35 @@ h1 {
 	opacity: 0 !important;
 }
 h2.fadeOut {
-	margin-top: -100px !important;
+	margin-left: -100px !important;
 }
 h3.fadeOut {
 	margin-left: -100px !important;
 }
 p.fadeOut {
-	margin-left: 100px !important;
+	margin-left: -100px !important;
 }
+.notrans {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+.default {
+	opacity: 0 !important;
+}
+h2.default {
+	margin-top: -100px !important;
+	margin-left: 0px !important;
+}
+h3.default{
+	margin-left: -100px !important;
+}
+ p.default {
+ 	margin-left: 100px !important;
+ }
+
 
 .headings_container:first-child {
 	h2 {display: block; margin-top: 0;}

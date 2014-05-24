@@ -31,6 +31,7 @@ nav_circles.click(function() {
 //variables
 var openSlider = $('.slick_slider');
 var openHeadings = $('.headings_container');
+var eachHeading = $('.headings_container h2, .headings_container h3, .headings_container p');
 var slideinDistance = 100; // set your margins to this one
 // animates the text to fade in
 function textFadeIn() {
@@ -52,9 +53,9 @@ function textFadeIn() {
 	}
 	// if transitions are detected, proceed to add classes to fadein things.
 	else {
-		currentH2.removeClass("fadeOut");
-		currentH3.removeClass("fadeOut");
-		currentP.removeClass("fadeOut");
+		currentH2.removeClass("fadeOut default notrans");
+		currentH3.removeClass("fadeOut default notrans");
+		currentP.removeClass("fadeOut default notrans");
 
 		currentH2.addClass("fadeIn");
 		currentH3.addClass("fadeIn");
@@ -78,10 +79,14 @@ function textFadeOut() {
 		}, 300);
 	}
 	else {
-		console.log("fade out else");
 		currentH2.addClass("fadeOut");
 		currentH3.addClass("fadeOut");
 		currentP.addClass("fadeOut");
+		setTimeout(function(){
+			currentH2.addClass("notrans default");
+			currentH3.addClass("notrans default");
+			currentP.addClass("notrans default");
+		}, 410);
 	}
 }
 // applies the class current_heading to current headings in slide
