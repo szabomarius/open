@@ -37,6 +37,29 @@
 .work_outdoor {
 	width: 21.5652%;
 }
+.slick-dots {
+	left: 5%;
+}
 // ------------------------------------------------------
+}
+
+@media all and ( max-width: 917px ) {
+// ------------------------------------------------------
+.work_type {
+	width: 40%;
+	margin-bottom: 50px;
+	.round_graphic {
+		width: 210px;
+		height: 210px;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+	li {
+		font-size: 14px;
+	}
+}
+// ------------------------------------------------------	
 }
 

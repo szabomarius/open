@@ -701,4 +701,30 @@ p.default {
   .work_outdoor {
     width: 21.5652%;
   }
+
+  /* line 40, ../sass/partials/_queries.scss */
+  .slick-dots {
+    left: 5%;
+  }
+}
+@media all and (max-width: 917px) {
+  /* line 48, ../sass/partials/_queries.scss */
+  .work_type {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+  /* line 51, ../sass/partials/_queries.scss */
+  .work_type .round_graphic {
+    width: 210px;
+    height: 210px;
+    margin-bottom: 10px;
+  }
+  /* line 56, ../sass/partials/_queries.scss */
+  .work_type h3 {
+    font-size: 18px;
+  }
+  /* line 59, ../sass/partials/_queries.scss */
+  .work_type li {
+    font-size: 14px;
+  }
 }
