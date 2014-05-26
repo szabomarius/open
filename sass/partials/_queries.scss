@@ -124,5 +124,136 @@ h1 {
 .slick_dots {
 	bottom: 160px;
 }
+.down_button {
+	width: 76px;
+	height: 76px;
+	bottom: 35px;
+}
 // ------------------------------------------------------	
+}
+
+@media all and ( max-width: 670px ) {
+// ------------------------------------------------------	
+.main_nav {
+	a {
+		font-size: 14px;
+	}
+	li {
+		margin-left: 10px;
+	}
+}
+.open_slider {
+	.number1 img { 
+		margin-top: 90px;
+		width: 600px;
+	}
+	.number2 img {
+		margin-top: 90px;
+		width: 500px;
+	}
+	.number3 img {
+		margin-top: 190px;
+	}
+}
+// ------------------------------------------------------	
+}
+
+@media all and ( max-width: 542px ) {
+// ------------------------------------------------------	
+.head_wrapper {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.main_nav {
+	float: none;
+	padding: 0px;
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	width: 100%;
+	li {
+		margin-left: 30px;
+		&:first-child {
+				margin-left: 0px;
+		}
+	}
+}
+.work_type {
+	.round_graphic {
+		width: 140px;
+		height: 140px;
+		img {
+			width: 30%;
+			height: auto;
+		}
+	}
+}
+// ------------------------------------------------------	
+}
+
+@media all and ( max-width: 360px ) {
+// ------------------------------------------------------
+.main_nav {
+	li {
+		margin-left: 5px;
+	}
+	a {
+		font-size: 13px;
+	}
+}
+.open_slider {
+	width: 280%;
+	section img {
+		width: 40%;
+		height: auto;
+		margin-left: 20%;
+	}
+}
+.headings {
+	h2 {
+		font-size: 44px;
+	}
+	h3 {
+		font-size: 26px;
+		top: 50px;
+	}
+	p {
+		font-size: 14px;
+		top: 90px;
+	}
+}
+.main_content {
+	padding-bottom: 30px;
+}
+.work_type {
+	margin: 0px 0px 20px 0px;
+	width: 100%;
+	clear: both;
+	.round_graphic {
+		float: left;
+		width: 120px;
+		height: 120px;
+		margin-right: 15px;
+		img {
+			width: 30%;
+			height: auto;
+		}
+	}
+	h3 {
+		float: left;
+		width: 80px;
+	}
+	ul {
+		float: left;
+		width: 140px;
+		text-align: left;
+		li {
+			font-size: 12px;
+		}
+	}
+}
+h1 {
+	width: 140px;
+}
+// ------------------------------------------------------
 }
