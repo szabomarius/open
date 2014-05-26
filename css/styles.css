@@ -372,8 +372,8 @@ h1 {
 }
 /* line 115, ../sass/partials/_layout.scss */
 h1 .logo {
-  width: 193px;
-  height: 193px;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -731,5 +731,86 @@ p.default {
   /* line 62, ../sass/partials/_queries.scss */
   .work_type li {
     font-size: 14px;
+  }
+
+  /* line 67, ../sass/partials/_queries.scss */
+  .open_slider {
+    width: 250%;
+  }
+  /* line 69, ../sass/partials/_queries.scss */
+  .open_slider section img {
+    margin-left: 20%;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 80, ../sass/partials/_queries.scss */
+  .main_header {
+    height: 600px;
+    background: white url('../img/header_vertical_bg_small.png?1401093129') repeat-x top !important;
+  }
+
+  /* line 84, ../sass/partials/_queries.scss */
+  .main_header_container {
+    background: transparent url('../img/highlight_header_bg_small.png?1401094039') no-repeat center top !important;
+  }
+
+  /* line 87, ../sass/partials/_queries.scss */
+  .head_wrapper {
+    padding-top: 40px;
+    height: 600px;
+  }
+
+  /* line 91, ../sass/partials/_queries.scss */
+  .main_nav {
+    padding-top: 40px;
+  }
+  /* line 93, ../sass/partials/_queries.scss */
+  .main_nav a {
+    font-size: 14px;
+  }
+
+  /* line 97, ../sass/partials/_queries.scss */
+  h1 {
+    width: 150px;
+    margin-bottom: 28px;
+  }
+
+  /* line 102, ../sass/partials/_queries.scss */
+  .open_slider section img {
+    width: 40%;
+    height: auto;
+    margin-left: 28%;
+  }
+  /* line 107, ../sass/partials/_queries.scss */
+  .open_slider .number1 img {
+    margin-top: 60px;
+  }
+  /* line 108, ../sass/partials/_queries.scss */
+  .open_slider .number2 img {
+    margin-top: 60px;
+  }
+  /* line 109, ../sass/partials/_queries.scss */
+  .open_slider .number3 img {
+    margin-top: 60px;
+  }
+
+  /* line 112, ../sass/partials/_queries.scss */
+  .headings h2 {
+    font-size: 80px;
+  }
+  /* line 115, ../sass/partials/_queries.scss */
+  .headings h3 {
+    font-size: 51px;
+    top: 80px;
+  }
+  /* line 119, ../sass/partials/_queries.scss */
+  .headings p {
+    font-size: 17px;
+    top: 140px;
+  }
+
+  /* line 124, ../sass/partials/_queries.scss */
+  .slick_dots {
+    bottom: 160px;
   }
 }
