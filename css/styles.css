@@ -845,15 +845,20 @@ p.default {
   .open_slider .number3 img {
     margin-top: 190px;
   }
+
+  /* line 159, ../sass/partials/_queries.scss */
+  .footer_wrapper p {
+    font-size: 14px;
+  }
 }
 @media all and (max-width: 542px) {
-  /* line 163, ../sass/partials/_queries.scss */
+  /* line 168, ../sass/partials/_queries.scss */
   .head_wrapper {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  /* line 167, ../sass/partials/_queries.scss */
+  /* line 172, ../sass/partials/_queries.scss */
   .main_nav {
     float: none;
     padding: 0px;
@@ -862,102 +867,128 @@ p.default {
     text-align: center;
     width: 100%;
   }
-  /* line 174, ../sass/partials/_queries.scss */
+  /* line 179, ../sass/partials/_queries.scss */
   .main_nav li {
     margin-left: 30px;
   }
-  /* line 176, ../sass/partials/_queries.scss */
+  /* line 181, ../sass/partials/_queries.scss */
   .main_nav li:first-child {
     margin-left: 0px;
   }
 
-  /* line 182, ../sass/partials/_queries.scss */
+  /* line 187, ../sass/partials/_queries.scss */
   .work_type .round_graphic {
     width: 140px;
     height: 140px;
   }
-  /* line 185, ../sass/partials/_queries.scss */
+  /* line 190, ../sass/partials/_queries.scss */
   .work_type .round_graphic img {
     width: 30%;
     height: auto;
   }
+
+  /* line 196, ../sass/partials/_queries.scss */
+  .main_footer {
+    height: 200px;
+  }
+
+  /* line 199, ../sass/partials/_queries.scss */
+  .footer_wrapper {
+    padding-top: 50px;
+  }
+  /* line 201, ../sass/partials/_queries.scss */
+  .footer_wrapper .mesaj {
+    margin-bottom: 5px;
+    display: block;
+  }
+  /* line 205, ../sass/partials/_queries.scss */
+  .footer_wrapper .bulina {
+    display: block;
+    list-style-type: none;
+  }
+  /* line 209, ../sass/partials/_queries.scss */
+  .footer_wrapper p span {
+    background: none;
+    padding-left: 0px;
+    line-height: 1.5em;
+  }
 }
 @media all and (max-width: 360px) {
-  /* line 197, ../sass/partials/_queries.scss */
+  /* line 221, ../sass/partials/_queries.scss */
   .main_nav li {
     margin-left: 5px;
   }
-  /* line 200, ../sass/partials/_queries.scss */
+  /* line 224, ../sass/partials/_queries.scss */
   .main_nav a {
     font-size: 13px;
   }
 
-  /* line 204, ../sass/partials/_queries.scss */
+  /* line 228, ../sass/partials/_queries.scss */
   .open_slider {
     width: 280%;
   }
-  /* line 206, ../sass/partials/_queries.scss */
+  /* line 230, ../sass/partials/_queries.scss */
   .open_slider section img {
     width: 40%;
     height: auto;
     margin-left: 20%;
   }
 
-  /* line 213, ../sass/partials/_queries.scss */
+  /* line 237, ../sass/partials/_queries.scss */
   .headings h2 {
     font-size: 44px;
   }
-  /* line 216, ../sass/partials/_queries.scss */
+  /* line 240, ../sass/partials/_queries.scss */
   .headings h3 {
     font-size: 26px;
     top: 50px;
   }
-  /* line 220, ../sass/partials/_queries.scss */
+  /* line 244, ../sass/partials/_queries.scss */
   .headings p {
     font-size: 14px;
     top: 90px;
   }
 
-  /* line 225, ../sass/partials/_queries.scss */
+  /* line 249, ../sass/partials/_queries.scss */
   .main_content {
     padding-bottom: 30px;
   }
 
-  /* line 228, ../sass/partials/_queries.scss */
+  /* line 252, ../sass/partials/_queries.scss */
   .work_type {
     margin: 0px 0px 20px 0px;
     width: 100%;
     clear: both;
   }
-  /* line 232, ../sass/partials/_queries.scss */
+  /* line 256, ../sass/partials/_queries.scss */
   .work_type .round_graphic {
     float: left;
     width: 120px;
     height: 120px;
     margin-right: 15px;
   }
-  /* line 237, ../sass/partials/_queries.scss */
+  /* line 261, ../sass/partials/_queries.scss */
   .work_type .round_graphic img {
     width: 30%;
     height: auto;
   }
-  /* line 242, ../sass/partials/_queries.scss */
+  /* line 266, ../sass/partials/_queries.scss */
   .work_type h3 {
     float: left;
     width: 80px;
   }
-  /* line 246, ../sass/partials/_queries.scss */
+  /* line 270, ../sass/partials/_queries.scss */
   .work_type ul {
     float: left;
     width: 140px;
     text-align: left;
   }
-  /* line 250, ../sass/partials/_queries.scss */
+  /* line 274, ../sass/partials/_queries.scss */
   .work_type ul li {
     font-size: 12px;
   }
 
-  /* line 255, ../sass/partials/_queries.scss */
+  /* line 279, ../sass/partials/_queries.scss */
   h1 {
     width: 140px;
   }
